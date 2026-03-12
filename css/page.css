@@ -1,0 +1,219 @@
+/* Background & layout */
+body.form-body {
+    background: linear-gradient(
+        to bottom,
+        rgba(140, 150, 160, 0.85),
+        rgba(200, 210, 220, 0.85)
+    ),
+    url('../image/hccbg.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container {
+    background: transparent;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.form-header {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.header-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.header-text {
+    flex: 0 1 auto;
+    min-width: 300px;
+}
+
+.form-header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: #0e2f74;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-header p {
+    font-size: 15px;
+    color: #333;
+    margin: 6px 0 0;
+}
+
+.side-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin: 15px 0 10px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    min-width: 100px;
+}
+
+/* Inputs and Selects */
+.form-group input,
+.form-group select {
+    flex: 1;
+    min-width: 100px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.back-btn {
+    background-color: #0e2f74;
+    color: white;
+}
+
+.back-btn:hover {
+    background-color: #0e2f74;
+    color: gray;
+}
+
+.submit-btn {
+    background-color: #0e2f74;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #0b1e5b;
+    color: gray;
+}
+
+/* Responsive (for small screens) */
+@media screen and (max-width: 768px) {
+    body.form-body {
+        height: auto;
+        overflow: auto;
+        padding: 20px 0;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group label {
+        min-width: unset;
+    }
+
+    .side-logo {
+        width: 70px;
+    }
+
+    .form-header h1 {
+        font-size: 22px;
+    }
+
+    .form-header p {
+        font-size: 12px;
+    }
+}
+
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+}
+
+.modal-footer .btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+  font-weight: normal;
+  font-weight: bold ;
+  color: #0e2f74;;
+  font-size: 17px;
+  cursor: pointer;
+  gap: -2px; /* space between circle and label */
+}
+
+.radio-group input[type="radio"] {
+  width: 20px;   /* bigger circle */
+  height: 20px;  /* bigger circle */
+  accent-color: #0e2f74; /* color matching your theme */
+}
