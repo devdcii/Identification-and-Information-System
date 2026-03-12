@@ -1,0 +1,24 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore temporary / backup files
+*.tmp
+*.bak
+*.swp
+
+# Ignore PHP composer dependencies if any
+/vendor/
+
+# Ignore Node dependencies if you used npm
+/node_modules/
+
+# Ignore database export if you want to keep it private (optional)
+/database/*.sql
+
+# Ignore IDE / editor config files
+.vscode/
+.idea/
